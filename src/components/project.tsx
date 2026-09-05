@@ -147,7 +147,7 @@
 
 // Work.tsx
 // Work.tsx
-import { ArrowUpRight } from "lucide-react";
+// import { ArrowUpRight } from "lucide-react";
 import Reveal from "./Animation/Reveal";
 
 function GithubIcon({ className }: { className?: string }) {

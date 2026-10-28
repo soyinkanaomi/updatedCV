@@ -72,7 +72,7 @@
 // export default Highlights;
 
 
-// Highlights.tsx
+
 import React from "react";
 import Reveal from "./Reveal";
 

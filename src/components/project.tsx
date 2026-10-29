@@ -112,7 +112,6 @@ export default function Work() {
               }}
               className="grid overflow-hidden rounded-3xl border border-[#E8E2D2] bg-white dark:border-white/10 dark:bg-[#211c17] md:grid-cols-2"
             >
-              {/* image */}
               <div className="relative aspect-[4/3] md:aspect-auto md:min-h-[420px]">
                 {project.image ? (
                   <img
@@ -133,7 +132,6 @@ export default function Work() {
                 </span>
               </div>
 
-              {/* details */}
               <div className="flex flex-col justify-center p-8 md:p-12">
                 <p className="text-xs font-semibold uppercase tracking-widest text-[#e96512]">
                   {project.category} · {project.year}
@@ -190,7 +188,6 @@ export default function Work() {
             </motion.article>
           </AnimatePresence>
 
-          {/* controls */}
           {many && (
             <div className="mt-8 flex items-center justify-between">
               <div className="flex items-center gap-4">

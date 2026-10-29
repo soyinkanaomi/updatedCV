@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Reveal from "./Animation/Reveal";
-import weddingImage from "../assets/the-dapsons-wedding.vercel.app_(Galaxy Z Fold 6).png";
+import weddingImage from "../assets/wedding.png";
 
 function GithubIcon({ className }: { className?: string }) {
   return (

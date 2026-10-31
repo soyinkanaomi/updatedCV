@@ -87,7 +87,7 @@ const About: React.FC = () => {
 
                 <div className="flex flex-wrap items-center gap-3">
                   <a
-                    href="#work"
+                    href="#contact"
                     className="group flex items-center gap-3 rounded-full bg-[#e96512] px-7 py-4 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#d95609]"
                   >
                     Let's work together
@@ -98,7 +98,7 @@ const About: React.FC = () => {
                   </a>
 
                   <a
-                    href="#contact"
+                    href="#work"
                     className="rounded-full border border-[#e2d8cd] dark:border-white/15 bg-transparent px-7 py-4 text-sm font-semibold text-[#2c211b] dark:text-[#f5f0e8] transition-all duration-300 hover:border-[#e96512] hover:text-[#e96512]"
                   >
                     See projects

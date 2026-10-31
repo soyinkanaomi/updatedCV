@@ -34,7 +34,7 @@ const projects: Project[] = [
     category: "Web App",
     year: "2026",
     description:
-      "A responsive wedding website with a live countdown, an RSVP form that emails every response, a photo gallery with a lightbox, venue map and calendar links, and scroll animations.",
+      "A responsive wedding website with a live countdown, an RSVP form that emails responses, a photo gallery with a lightbox, and scroll animations.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Motion", "Vite"],
     image: weddingImage,
     live: "https://the-dapsons-wedding.vercel.app/",
@@ -112,14 +112,13 @@ export default function Work() {
               }}
               className="grid overflow-hidden rounded-3xl border border-[#E8E2D2] bg-white shadow-sm dark:shadow-2xl dark:shadow-black/40 md:grid-cols-2"
             >
-              {/* image */}
-              <div className="relative aspect-[4/3] md:aspect-auto md:min-h-[420px]">
+              <div className="relative aspect-[16/10] md:aspect-auto md:min-h-[340px]">
                 {project.image ? (
                   <img
                     src={project.image}
                     alt={project.title}
                     draggable={false}
-                    className="absolute inset-0 h-full w-full object-cover"
+                    className="absolute inset-0 h-full w-full object-cover object-top"
                   />
                 ) : (
                   <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#F6DCC8] to-[#e96512]/40">
@@ -133,19 +132,20 @@ export default function Work() {
                 </span>
               </div>
 
-              {/* details */}
-              <div className="flex flex-col justify-center p-8 md:p-12">
+              <div className="flex flex-col justify-center p-6 md:p-10">
                 <p className="text-xs font-semibold uppercase tracking-widest text-[#e96512]">
                   {project.category} · {project.year}
                 </p>
 
-                <h3 className="mt-3 font-serif text-3xl md:text-4xl font-bold text-[#1A1815]">
+                <h3 className="mt-3 font-serif text-2xl md:text-3xl font-bold text-[#1A1815]">
                   {project.title}
                 </h3>
 
-                <p className="mt-4 text-[#5A574E]">{project.description}</p>
+                <p className="mt-3 line-clamp-3 text-[#5A574E]">
+                  {project.description}
+                </p>
 
-                <ul className="mt-6 flex flex-wrap gap-2">
+                <ul className="mt-4 flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <li
                       key={tag}
@@ -156,7 +156,7 @@ export default function Work() {
                   ))}
                 </ul>
 
-                <div className="mt-8 flex flex-wrap items-center gap-3">
+                <div className="mt-6 flex flex-wrap items-center gap-3">
                   {project.live && (
                     <a
                       href={project.live}
@@ -188,7 +188,6 @@ export default function Work() {
             </motion.article>
           </AnimatePresence>
 
-          {/* controls */}
           {many && (
             <div className="mt-8 flex items-center justify-between">
               <div className="flex items-center gap-4">

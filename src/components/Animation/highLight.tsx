@@ -78,8 +78,8 @@ import Reveal from "./Reveal";
 
 const stats = [
   { value: "6", label: "months of focused coding" },
-  { value: "20+", label: "mini projects built" },
-  { value: "4", label: "full featured builds" },
+  { value: "2+", label: "mini projects built" },
+  { value: "2", label: "full featured builds" },
   { value: "10", label: "techs & tools learned" },
 ];
 

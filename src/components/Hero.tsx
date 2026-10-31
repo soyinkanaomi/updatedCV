@@ -17,7 +17,6 @@ const Hero = () => {
 
       <div className="relative mx-auto flex min-h-screen max-w-[1400px] items-center px-6 pb-12 pt-32 lg:px-10 lg:pt-24">
         <div className="grid w-full items-center gap-14 lg:grid-cols-[1fr_0.82fr]">
-          {/* LEFT SIDE */}
           <Reveal>
             <div className="mx-auto max-w-[700px] pt-10 text-center lg:mx-0 lg:text-left">
               <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-[#e6dcd0] dark:border-white/10 bg-[#f5f0e8] dark:bg-[#211c17] px-4 py-2">
@@ -69,7 +68,6 @@ const Hero = () => {
             </div>
           </Reveal>
 
-          {/* RIGHT SIDE */}
           <Reveal delay={0.15}>
             <div className="mx-auto flex justify-center pt-6 lg:mx-0 lg:justify-end lg:pt-0">
               <div className="relative w-[240px] h-[300px] sm:w-[300px] sm:h-[360px] lg:w-[360px] lg:h-[420px]">

@@ -47,7 +47,7 @@ const projects: Project[] = [
     status: "In progress",
     description:
       "A pastry storefront with a menu, customer reviews, a contact form and a checkout flow.",
-    tags: ["React", "TypeScript", "Tailwind CSS"], // adjust to what you actually used
+    tags: ["React", "TypeScript", "Tailwind CSS"], 
   },
 ];
 

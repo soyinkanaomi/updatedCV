@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Reveal from "./Animation/Reveal";
-import weddingImage from "../assets/wedding.png";
+import weddingImage from "../assets/wedding2.jpg";
 
 function GithubIcon({ className }: { className?: string }) {
   return (
@@ -47,7 +47,7 @@ const projects: Project[] = [
     status: "In progress",
     description:
       "A pastry storefront with a menu, customer reviews, a contact form and a checkout flow.",
-    tags: ["React", "TypeScript", "Tailwind CSS"], 
+    tags: ["React", "TypeScript", "Tailwind CSS"],
   },
 ];
 
@@ -110,8 +110,9 @@ export default function Work() {
                 if (info.offset.x < -80) paginate(1);
                 else if (info.offset.x > 80) paginate(-1);
               }}
-              className="grid overflow-hidden rounded-3xl border border-[#E8E2D2] bg-white dark:border-white/10 dark:bg-[#211c17] md:grid-cols-2"
+              className="grid overflow-hidden rounded-3xl border border-[#E8E2D2] bg-white shadow-sm dark:shadow-2xl dark:shadow-black/40 md:grid-cols-2"
             >
+              {/* image */}
               <div className="relative aspect-[4/3] md:aspect-auto md:min-h-[420px]">
                 {project.image ? (
                   <img
@@ -121,7 +122,7 @@ export default function Work() {
                     className="absolute inset-0 h-full w-full object-cover"
                   />
                 ) : (
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#F6DCC8] to-[#e96512]/40 dark:from-[#3a2e1a] dark:to-[#e96512]/30">
+                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#F6DCC8] to-[#e96512]/40">
                     <span className="font-serif text-7xl italic text-[#e96512]">
                       {project.title.charAt(0)}
                     </span>
@@ -132,24 +133,23 @@ export default function Work() {
                 </span>
               </div>
 
+              {/* details */}
               <div className="flex flex-col justify-center p-8 md:p-12">
                 <p className="text-xs font-semibold uppercase tracking-widest text-[#e96512]">
                   {project.category} · {project.year}
                 </p>
 
-                <h3 className="mt-3 font-serif text-3xl md:text-4xl font-bold text-[#1A1815] dark:text-[#f5f0e8]">
+                <h3 className="mt-3 font-serif text-3xl md:text-4xl font-bold text-[#1A1815]">
                   {project.title}
                 </h3>
 
-                <p className="mt-4 text-[#5A574E] dark:text-[#a8a296]">
-                  {project.description}
-                </p>
+                <p className="mt-4 text-[#5A574E]">{project.description}</p>
 
                 <ul className="mt-6 flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <li
                       key={tag}
-                      className="rounded-full bg-[#F6DCC8] px-3 py-1 text-xs font-medium text-[#8a3d08] dark:bg-[#3a2e1a] dark:text-[#f0b98a]"
+                      className="rounded-full bg-[#F6DCC8] px-3 py-1 text-xs font-medium text-[#8a3d08]"
                     >
                       {tag}
                     </li>
@@ -162,7 +162,7 @@ export default function Work() {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 rounded-full bg-[#e96512] px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-[#1A1815] dark:hover:bg-white dark:hover:text-[#17130f]"
+                      className="inline-flex items-center gap-2 rounded-full bg-[#e96512] px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-[#1A1815]"
                     >
                       View live site ↗
                     </a>
@@ -172,14 +172,14 @@ export default function Work() {
                       href={project.repo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 rounded-full border border-[#1A1815]/20 px-6 py-3 text-sm font-medium text-[#1A1815] transition-colors hover:border-[#e96512] hover:text-[#e96512] dark:border-white/20 dark:text-[#f5f0e8]"
+                      className="inline-flex items-center gap-2 rounded-full border border-[#1A1815]/20 px-6 py-3 text-sm font-medium text-[#1A1815] transition-colors hover:border-[#e96512] hover:text-[#e96512]"
                     >
                       <GithubIcon className="h-4 w-4" />
                       View code
                     </a>
                   )}
                   {!project.live && !project.repo && (
-                    <p className="text-sm italic text-[#5A574E] dark:text-[#a8a296]">
+                    <p className="text-sm italic text-[#5A574E]">
                       Link coming soon
                     </p>
                   )}
@@ -188,6 +188,7 @@ export default function Work() {
             </motion.article>
           </AnimatePresence>
 
+          {/* controls */}
           {many && (
             <div className="mt-8 flex items-center justify-between">
               <div className="flex items-center gap-4">

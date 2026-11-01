@@ -69,13 +69,13 @@ export default function Skills() {
 
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-14">
             <p className="text-[#5A574E] dark:text-[#a8a296] max-w-md">
-              Everything below is stuff I&apos;ve actually shipped with — learned
+              Everything below is stuff I&apos;ve actually shipped with learned
               through building, not just watching tutorials.
             </p>
-            <p className="text-sm text-[#1A1815] dark:text-[#f5f0e8]">
+            {/* <p className="text-sm text-[#1A1815] dark:text-[#f5f0e8]">
               <span className="font-semibold">One rule:</span> if I list it,
               I&apos;ve built something real with it.
-            </p>
+            </p> */}
           </div>
         </Reveal>
 

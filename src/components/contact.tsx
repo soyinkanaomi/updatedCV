@@ -126,7 +126,7 @@ export default function Contact() {
 
             <p className="text-[#5A574E] dark:text-[#a8a296] max-w-md mb-10">
               Got a project, an internship, or just want to say hi? My inbox is
-              always open — I reply fast.
+              always open I reply fast.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -272,12 +272,12 @@ export default function Contact() {
 
               {status === "sent" && (
                 <p className="text-sm text-[#3E6B4F] dark:text-[#7bc796] mt-4 text-center">
-                  Message sent — thanks! I&apos;ll reply soon.
+                  Message sent thanks! I&apos;ll reply soon.
                 </p>
               )}
               {status === "error" && (
                 <p className="text-sm text-red-600 dark:text-red-400 mt-4 text-center">
-                  Something went wrong — try again, or email me directly.
+                  Something went wrong try again, or email me directly.
                 </p>
               )}
             </form>

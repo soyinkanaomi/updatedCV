@@ -22,7 +22,7 @@ const experience: ExperienceItem[] = [
     org: "kode10x",
     title: "Frontend Development Trainee",
     description:
-      "A 6-month intensive focused on frontend fundamentals — daily practice, code reviews, and guided projects covering the core of modern web development.",
+      "A 6-month intensive focused on frontend fundamentals daily practice, code reviews, and guided projects covering the core of modern web development.",
     points: [
       "Worked through 2 UI exercises covering layout, state and interactivity",
       "Practiced pair-coding sessions with a cohort of fellow learners",
@@ -52,7 +52,7 @@ const education: EducationItem[] = [
   },
   {
     badge: "2025",
-    title: "kode10x — Frontend Track",
+    title: "kode10x Frontend Track",
     description:
       "Graduated a focused 6-month coding intensive covering modern web development and real project workflows.",
   },
@@ -81,13 +81,12 @@ export default function Journey() {
           </h2>
 
           <p className="text-[#5A574E] dark:text-[#a8a296] max-w-xl mb-16">
-            The short, intense path that got me here — and the foundations
+            The short, intense path that got me here and the foundations
             underneath it.
           </p>
         </Reveal>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Experience column */}
           <Reveal delay={0}>
             <div>
               <div className="flex items-center gap-2 mb-8">
@@ -137,7 +136,6 @@ export default function Journey() {
             </div>
           </Reveal>
 
-          {/* Education column */}
           <Reveal delay={0.15}>
             <div>
               <div className="flex items-center gap-2 mb-8">

@@ -50,7 +50,7 @@ const About: React.FC = () => {
                   <span className="font-semibold text-[#211812] dark:text-white">
                     Naomi
                   </span>{" "}
-                  — after finishing secondary school I made an unusual call:
+                  after finishing secondary school I made an unusual call:
                   instead of waiting around, I threw myself into a{" "}
                   <span className="font-serif text-[#e96512]">
                     six-month intensive at kode10x
@@ -65,7 +65,7 @@ const About: React.FC = () => {
                 </p>
                 <p>
                   I bring the energy, discipline and fresh perspective of a junior
-                  developer who is hungry to grow — and I'm looking for my first
+                  developer who is hungry to grow and I'm looking for my first
                   team to build with.
                 </p>
               </div>

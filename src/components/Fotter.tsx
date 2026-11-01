@@ -55,7 +55,7 @@ export default function Footer() {
                 <span className="font-serif font-bold text-lg">Soyinka.</span>
               </div>
               <p className="text-sm text-gray-400">
-                Frontend developer building clean, responsive interfaces —
+                Frontend developer building clean, responsive interfaces
                 currently open to junior roles and internships.
               </p>
             </div>

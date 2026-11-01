@@ -38,7 +38,7 @@ const projects: Project[] = [
     tags: ["React", "TypeScript", "Tailwind CSS", "Motion", "Vite"],
     image: weddingImage,
     live: "https://the-dapsons-wedding.vercel.app/",
-    repo: "https://github.com/soyinkanaomi/theDapsons-iv",
+    repo: "https://github.com/soyinkanaomi/the-dapsons-wedding",
   },
   {
     title: "SweetBites Pastry Store",

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Reveal from "./Animation/Reveal";
-import weddingImage from "../assets/wedding2.jpg";
+import weddingImage from "../assets/wedding4.png";
+import birthdayImage from"../assets/birthday-card.png"
 
 function GithubIcon({ className }: { className?: string }) {
   return (
@@ -39,6 +40,17 @@ const projects: Project[] = [
     image: weddingImage,
     live: "https://the-dapsons-wedding.vercel.app/",
     repo: "https://github.com/soyinkanaomi/the-dapsons-wedding",
+  },
+  {
+    category: "Frontend · Animation",
+    year: "2026",
+    title: "Animated Birthday Card",
+    description:
+      "A mobile-first interactive birthday card. Tapping a hand-drawn SVG teddy fairy's wand triggers a sparkle burst, confetti, and a reveal of the card, all done with CSS keyframes and no animation library.",
+    tags: ["React", "TypeScript", "SVG", "CSS Animations", "Vite", "Vercel"],
+    image: birthdayImage,
+    live: "https://triumph-bdcard.vercel.app",
+    repo: "https://github.com/soyinkanaomi/triumph-bdcard",
   },
   {
     title: "SweetBites Pastry Store",
